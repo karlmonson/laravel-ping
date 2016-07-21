@@ -1,4 +1,4 @@
-# Ping For Laravel
+# Ping for Laravel
 
 This Laravel package is simple and unopinionated. It simply returns the HTTP Status Code for a provided URL.
 
