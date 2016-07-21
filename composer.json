@@ -1,0 +1,22 @@
+{
+  "name": "karlmonson/laravel-ping",
+  "description": "Simple Ping For Laravel Applications",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Karl Monson",
+      "email": "karl@karlmonson.com",
+      "homepage": "https://github.com/karlmonson",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Karlmonson\\Ping\\": "src/"
+    }
+  },
+  "require": {
+    "illuminate/support": "^5.1",
+    "guzzlehttp/guzzle": "~6.0"
+  }
+}
