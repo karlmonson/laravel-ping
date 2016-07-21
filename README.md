@@ -4,6 +4,11 @@ This Laravel package is simple and unopinionated. It simply returns the HTTP Sta
 
 ## Installation
 
+Install via Composer:
+```bash
+composer require karlmonson/laravel-ping
+```
+You'll need to register the ServiceProvider and Facade:
 ```php
 // config/app.php
 
