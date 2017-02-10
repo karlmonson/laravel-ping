@@ -5,6 +5,7 @@ namespace Karlmonson\Ping;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\ConnectException;
+use GuzzleHttp\Exception\ServerException;
 
 class Ping
 {
@@ -45,8 +46,9 @@ class Ping
 			$response = $e->getResponse();
 			$this->responseCode = $response->getStatusCode();
 		} catch(ConnectException $e) {
-			$response = $e->getResponse();
-			$this->responseCode = $response->getStatusCode();
+			$this->responseCode = $e->getCode();
+		} catch(ServerException $e) {
+			$this->responseCode = $e->getCode();
 		}
 
 		return $this->responseCode;
