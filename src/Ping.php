@@ -29,6 +29,11 @@ class Ping
 	 */
 	protected $allowRedirects = true;
 
+	/**
+	 * @var arr
+	 */
+	protected $dns;
+
 	public function __construct()
 	{
 		$this->client = new Client([
@@ -52,5 +57,32 @@ class Ping
 		}
 
 		return $this->responseCode;
+	}
+
+	public function checkA($host, $val)
+	{
+		$this->dns = collect(dns_get_record($host, DNS_A));
+		$filtered = $this->dns->filter(function($item, $key) use($val) {
+			return $item['ip'] == $val;
+		});
+		return $filtered->count() > 0;
+	}
+
+	public function checkCname($host, $val)
+	{
+		$this->dns = collect(dns_get_record($host, DNS_CNAME));
+		$filtered = $this->dns->filter(function($item, $key) use($val) {
+			return $item['target'] === $val;
+		});
+		return $filtered->count() > 0;
+	}
+
+	public function checkNameserver($host, $val)
+	{
+		$this->dns = collect(dns_get_record($host, DNS_NS));
+		$filtered = $this->dns->filter(function($item, $key) use($val) {
+			return $item['target'] === $val;
+		});
+		return $filtered->count() > 0;
 	}
 }
