@@ -18,5 +18,15 @@
   "require": {
     "illuminate/support": "^5.1",
     "guzzlehttp/guzzle": "~6.0"
+  },
+   "extra": {
+    "laravel": {
+      "providers": [
+        "Karlmonson\\Ping\\PingServiceProvider",
+      ],
+      "aliases": {
+        "Ping": "Karlmonson\\Ping\\Facades\\Ping"
+      }
+    }
   }
 }
