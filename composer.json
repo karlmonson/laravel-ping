@@ -22,7 +22,7 @@
    "extra": {
     "laravel": {
       "providers": [
-        "Karlmonson\\Ping\\PingServiceProvider",
+        "Karlmonson\\Ping\\PingServiceProvider"
       ],
       "aliases": {
         "Ping": "Karlmonson\\Ping\\Facades\\Ping"
