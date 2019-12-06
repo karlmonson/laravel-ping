@@ -16,7 +16,7 @@
     }
   },
   "require": {
-    "illuminate/support": "^5.1|^5.7|^5.8|^6.*",
+    "illuminate/support": "^5.1 || ^5.7 || ^5.8 || ^6.0",
     "guzzlehttp/guzzle": "~6.0"
   },
    "extra": {
