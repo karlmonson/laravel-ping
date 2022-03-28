@@ -1,6 +1,6 @@
 <?php
 
-namespace Karlmonson\Ping\Facades;
+namespace Crysix\Ping\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

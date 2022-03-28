@@ -6,7 +6,7 @@ This Laravel package is simple and unopinionated. It simply returns the HTTP Sta
 
 Install via Composer:
 ```bash
-composer require karlmonson/laravel-ping
+composer require crysix/laravel-ping
 ```
 You'll need to register the ServiceProvider and Facade:
 ```php
@@ -14,12 +14,12 @@ You'll need to register the ServiceProvider and Facade:
 
 'providers' => [
     // ...
-    Karlmonson\Ping\PingServiceProvider::class,
+    Crysix\Ping\PingServiceProvider::class,
 ];
 
 'aliases' => [
     // ...
-    'Ping' => Karlmonson\Ping\Facades\Ping::class,
+    'Ping' => Crysix\Ping\Facades\Ping::class,
 ];
 ```
 
@@ -56,9 +56,10 @@ class LinkController extends Controller
 
 ## Credits
 
-- [Karl Monson](https://github.com/karlmonson) - Author
+- [Christian Hinz](https://github.com/crysix) - Maintainer
+- [Karl Monson](https://github.com/karlmonson) - Original author
 - [Eric Blount](https://github.com/ericmakesstuff) - Inspiration ([ericmakesstuff/laravel-server-monitor](https://github.com/ericmakesstuff/laravel-server-monitor))
 
 ## License
 
-The MIT License (MIT). Please see [License File](https://github.com/karlmonson/laravel-ping/blob/master/LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/crysix/laravel-ping/blob/master/LICENSE.md) for more information.

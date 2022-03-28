@@ -1,18 +1,18 @@
 {
-  "name": "karlmonson/laravel-ping",
+  "name": "crysix/laravel-ping",
   "description": "Simple Ping For Laravel Applications",
   "license": "MIT",
   "authors": [
     {
-      "name": "Karl Monson",
-      "email": "karl@karlmonson.com",
-      "homepage": "https://github.com/karlmonson",
+      "name": "Christian Hinz",
+      "email": "christian@milkycode.com",
+      "homepage": "https://github.com/crysix",
       "role": "Developer"
     }
   ],
   "autoload": {
     "psr-4": {
-      "Karlmonson\\Ping\\": "src/"
+      "Crysix\\Ping\\": "src/"
     }
   },
   "require": {
@@ -22,10 +22,10 @@
    "extra": {
     "laravel": {
       "providers": [
-        "Karlmonson\\Ping\\PingServiceProvider"
+        "Crysix\\Ping\\PingServiceProvider"
       ],
       "aliases": {
-        "Ping": "Karlmonson\\Ping\\Facades\\Ping"
+        "Ping": "Crysix\\Ping\\Facades\\Ping"
       }
     }
   }

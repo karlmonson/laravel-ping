@@ -1,6 +1,6 @@
 <?php
 
-namespace Karlmonson\Ping;
+namespace Crysix\Ping;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
@@ -14,18 +14,18 @@ class Ping
 	 */
 	protected $client;
 
-	/**  
-	 * @var int 
+	/**
+	 * @var int
 	 */
 	protected $responseCode;
 
-	/** 
-	 * @var int 
+	/**
+	 * @var int
 	 */
 	protected $timeout = 5;
 
-	/** 
-	 * @var bool 
+	/**
+	 * @var bool
 	 */
 	protected $allowRedirects = true;
 

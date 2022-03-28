@@ -1,6 +1,6 @@
 <?php
 
-namespace Karlmonson\Ping;
+namespace Crysix\Ping;
 
 use Illuminate\Support\ServiceProvider;
 
